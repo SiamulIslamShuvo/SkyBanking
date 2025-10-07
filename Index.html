@@ -11,7 +11,45 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <h1 class="">Hello w</h1>
+  <body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-slate-200">
+      <header>
+        <nav class="flex justify-center items-center mt-6">
+          <div
+            class="mt-10 relative flex justify-center items-center w-9/12 mb-10"
+          >
+            <img
+              class="w-48 absolute"
+              src="./assets/bg.png"
+              alt="backgroundImage"
+            />
+            <img class="w-16" src="./assets/Group.png" alt="" />
+          </div>
+        </nav>
+      </header>
+      <!--login Section-->
+      <div class="hero bg-base-200">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="label">Account No</label>
+                <input
+                  type="number"
+                  class="input"
+                  placeholder="13 Digit Acc No."
+                />
+                <label class="label">Password</label>
+                <input type="password" class="input" placeholder="Password" />
+                <div>
+                  <a class="link link-hover">Forgot password?</a>
+                </div>
+                <button class="btn btn-neutral mt-4">Login</button>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
