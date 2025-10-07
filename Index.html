@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sky Bank Login</title>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-slate-800">
@@ -28,28 +29,41 @@
         </nav>
       </header>
       <!--login Section-->
-      <div class="hero bg-base-200">
+      <div class="">
         <div class="hero-content flex-col lg:flex-row-reverse">
           <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-            <div class="card-body">
+            <form class="card-body">
               <fieldset class="fieldset">
                 <label class="label">Account No</label>
                 <input
+                  value="1234567891234"
                   type="number"
+                  id="acc-no"
                   class="input"
                   placeholder="13 Digit Acc No."
+                  required
                 />
-                <label class="label">Password</label>
-                <input type="password" class="input" placeholder="Password" />
+                <label class="label">PIN</label>
+                <input
+                  value="1234"
+                  type="password"
+                  id="pin-no"
+                  class="input"
+                  placeholder="Password"
+                  required
+                />
                 <div>
-                  <a class="link link-hover">Forgot password?</a>
+                  <a class="link link-hover">Forgot PIN?</a>
                 </div>
-                <button class="btn btn-neutral mt-4">Login</button>
+                <button id="login-btn" class="btn btn-neutral mt-4">
+                  Login
+                </button>
               </fieldset>
-            </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
   </body>
+  <script src="./script/login.js"></script>
 </html>
