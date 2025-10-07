@@ -3,9 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>SkyBank</title>
   </head>
-  <body>
-    <h2>Hi</h2>
+  <body class="bg-slate-800">
+    /*Header section*/
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-slate-200">
+      <header class="">
+        <nav
+          class="shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] flex justify-around items-center px-4 pb-4"
+        >
+          <img class="w-16" src="./assets/Group.png" alt="" />
+
+          <div>
+            <h1 class="text-lg font-bold">$ 50,168.00</h1>
+            <p class="text-sm">Available Balance</p>
+          </div>
+          <button class="btn bg-yellow-100 shadow-lg shadow-yellow-500/50">
+            Logout
+          </button>
+        </nav>
+        <!--Header section-->
+        <section class="mt-8 px-6">
+          <h1 class="text-xl font-bold">🏦 Welcome to Sky Bank!</h1>
+          <p>
+            Enjoy easy and convenient financial services with us. Cashout charge
+            is low.
+          </p>
+          <div class="cards grid grid-cols-3 mt-14 gap-4">
+            <div
+              class="bg-yellow-50 box cursor-pointer p-4 text-center rounded-sm shadow-lg shadow-yellow-500/50"
+            >
+              <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="" />
+              <h3 class="mt-3 text-sm font-bold">Add Money</h3>
+            </div>
+            <div
+              class="cursor-pointer bg-yellow-50 box p-4 text-center rounded-sm shadow-lg shadow-yellow-500/50"
+            >
+              <img class="w-8 mx-auto" src="./assets/send1.png" alt="" />
+              <h3 class="mt-3 text-sm font-bold">Cash Out</h3>
+            </div>
+            <div
+              class="cursor-pointer bg-yellow-50 box p-4 text-center rounded-sm shadow-lg shadow-yellow-500/50"
+            >
+              <img class="w-8 mx-auto" src="./assets/money1.png" alt="" />
+              <h3 class="mt-3 text-sm font-bold">Transfer</h3>
+            </div>
+            <div
+              class="cursor-pointer bg-yellow-50 box p-4 text-center rounded-sm shadow-lg shadow-yellow-500/50"
+            >
+              <img class="w-8 mx-auto" src="./assets/bonus1.png" alt="" />
+              <h3 class="mt-3 text-sm font-bold">Get Bonus</h3>
+            </div>
+            <div
+              class="cursor-pointer bg-yellow-50 box p-4 text-center rounded-sm shadow-lg shadow-yellow-500/50"
+            >
+              <img class="w-8 mx-auto" src="./assets/purse1.png" alt="" />
+              <h3 class="mt-3 text-sm font-bold">Pay Bill</h3>
+            </div>
+            <div
+              class="cursor-pointer bg-yellow-50 box p-4 text-center rounded-sm shadow-lg shadow-yellow-500/50"
+            >
+              <img class="w-8 mx-auto" src="./assets/transaction1.png" alt="" />
+              <h3 class="mt-3 text-sm font-bold">Transactions</h3>
+            </div>
+          </div>
+          <!--features section-->
+          <section class="mt-8 px-6 bg-base-200">
+            <h2 class="text-xl font-bold">Add Money</h2>
+            <div class="">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="card w-full max-w-sm shrink-0">
+                  <div class="card-body">
+                    <legend>Select A Bank</legend>
+                    <select class="select select-warning">
+                      <option disabled selected>Select a bank</option>
+                      <option value="bankAsia">Bank Asia</option>
+                      <option value="easternBankLtd">Eastern Bank Ltd</option>
+                      <option value="midlandBank">Midland Bank</option>
+                      <option value="sonaliBank">Sonali Bank</option>
+                    </select>
+                    <fieldset class="fieldset">
+                      <label class="label">Account No</label>
+                      <input
+                        value="1234567891234"
+                        type="number"
+                        id="acc-no"
+                        class="input input-warning"
+                        placeholder="13 Digit Acc No."
+                        required
+                      />
+                      <label class="label">PIN</label>
+                      <input
+                        value="1234"
+                        type="password"
+                        id="pin-no"
+                        class="input input-warning"
+                        placeholder="Password"
+                        required
+                      />
+                      <div>
+                        <a class="link link-hover">Forgot PIN?</a>
+                      </div>
+                      <button
+                        id="login-btn"
+                        class="text-white btn bg-cyan-500 shadow-lg shadow-cyan-500/50 mt-4"
+                      >
+                        Add Money
+                      </button>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </header>
+    </section>
   </body>
 </html>
