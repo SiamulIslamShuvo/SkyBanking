@@ -23,7 +23,9 @@
           <img class="w-16" src="./assets/Group.png" alt="" />
 
           <div>
-            <h1 class="text-lg font-bold">$ 50,168.00</h1>
+            <h1 class="text-xl font-bold">
+              $<span id="mainBalance" class="font-black">50168</span>
+            </h1>
             <p class="text-sm">Available Balance</p>
           </div>
           <button class="btn bg-yellow-100 shadow-lg shadow-yellow-500/50">
@@ -77,7 +79,7 @@
           </div>
           <!--features section-->
           <section class="mt-8 px-6 bg-base-200">
-            <h2 class="text-xl font-bold">Add Money</h2>
+            <h2 class="text-xl font-bold py-4 text-center">Add Money</h2>
             <div class="">
               <div class="hero-content flex-col lg:flex-row-reverse">
                 <div class="card w-full max-w-sm shrink-0">
@@ -109,11 +111,18 @@
                         placeholder="Password"
                         required
                       />
+                      <label class="label">Amount</label>
+                      <input
+                        id="amount"
+                        type="number"
+                        placeholder="Amount"
+                        class="input input-warning"
+                      />
                       <div>
                         <a class="link link-hover">Forgot PIN?</a>
                       </div>
                       <button
-                        id="login-btn"
+                        id="add-money"
                         class="text-white btn bg-cyan-500 shadow-lg shadow-cyan-500/50 mt-4"
                       >
                         Add Money
@@ -127,8 +136,6 @@
         </section>
       </header>
     </section>
+    <script src="./script/addMoney.js"></script>
   </body>
 </html>
-
-<!--27-4 created add money button and add money form-->
-<!--28-4 created select option for bank-->
